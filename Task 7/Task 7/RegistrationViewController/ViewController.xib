@@ -51,7 +51,7 @@
                         <outlet property="delegate" destination="-1" id="s3C-7n-KFo"/>
                     </connections>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3p2-ib-qym">
+                <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3p2-ib-qym">
                     <rect key="frame" x="110" y="425" width="208" height="42"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="42" id="0n2-ar-0RK"/>

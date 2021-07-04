@@ -46,6 +46,8 @@
     self.buttonAuthorize.layer.borderWidth = 2;
     self.buttonAuthorize.layer.borderColor = [UIColor colorWithRed:0.5 green:0.64 blue:0.93 alpha:1.0].CGColor;
     self.buttonAuthorize.layer.cornerRadius = 5.0;
+    [self.buttonAuthorize setTitleColor:[UIColor colorWithRed:0.5 green:0.64 blue:0.93 alpha:0.4] forState:UIControlStateHighlighted];
+    self.buttonAuthorize.backgroundColor = [UIColor whiteColor];
     [self.buttonAuthorize addTarget:self action:@selector(authoruseTarget:) forControlEvents:UIControlEventTouchUpInside];
     
     // Buttons: Array numbers for password
@@ -153,6 +155,15 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField endEditing:true];
     return YES;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    textField.text = @"";
+    textField.layer.borderColor = [UIColor colorWithRed:0.3 green:0.36 blue:0.41 alpha:1.0].CGColor;
+}
+
+- (void)textFieldDidChangeSelection:(UITextField *)textField {
+    textField.layer.borderColor = [UIColor colorWithRed:0.3 green:0.36 blue:0.41 alpha:1.0].CGColor;
 }
 
 @end
